@@ -15,7 +15,7 @@
     "build:css:bannerize": "bannerize dist/videojs-hls-quality-selector.css --banner=scripts/banner.ejs",
     "build:css:sass": "node-sass src/plugin.scss dist/videojs-hls-quality-selector.css --output-style=compressed --linefeed=lf",
     "build:js": "npm-run-all build:js:rollup-modules build:js:rollup-umd build:js:bannerize build:js:uglify",
-    "build:js:bannerize": "bannerize dist/videojs-hls-quality-selector.js --banner=scripts/banner.ejs",
+    "build:js:bannerize": "bannerize dist/*.js --banner=scripts/banner.ejs",
     "build:js:rollup-modules": "rollup -c scripts/modules.rollup.config.js",
     "build:js:rollup-umd": "rollup -c scripts/umd.rollup.config.js",
     "build:js:uglify": "uglifyjs dist/videojs-hls-quality-selector.js --comments --mangle --compress  -o dist/videojs-hls-quality-selector.min.js",
