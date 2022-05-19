@@ -193,7 +193,7 @@ class HlsQualitySelectorPlugin {
       const menuItem = this._qualityButton.items[i];
 
       if (menuItem) {
-        menuItem.selected(menuItem.item && menuItem.item.value === height);
+        menuItem.selected(menuItem.item && menuItem.item.value === quality);
       }
     }
 
